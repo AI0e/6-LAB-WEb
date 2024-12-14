@@ -51,8 +51,11 @@ function validateInput(data) {
   }
 
   // Перевірка padding
-  if (data.padding && parseInt(data.padding) > 250) {
-    errors.push("Поле 'padding' не повинно перевищувати 250.");
+  if (data.padding && (parseInt(data.padding) > 250 ||parseInt(data.padding) < 0 )) {
+    errors.push("Поле 'padding' повинно бути в межах від 0  250.");
+  }
+  if (data.duration && (parseInt(data.duration) > 250 ||parseInt(data.duration) < 0 )) {
+    errors.push("Поле 'duration' повинно бути в межах від 0 до 150.");
   }
 
   // Повернення результату
