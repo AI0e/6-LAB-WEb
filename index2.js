@@ -1,6 +1,6 @@
-const databaseUrl = "https://lab6veb-default-rtdb.firebaseio.com/firebase.json"; // Заміни на URL своєї бази Firebase
+const databaseUrl = "https://lab6veb-default-rtdb.firebaseio.com/firebase.json"; 
 
-// Функція для завантаження даних
+
 async function loadFromFirebase() {
   try {
 
@@ -29,7 +29,7 @@ async function loadFromFirebase() {
         preview3.style.animation = `glitch3 ${data.duration}ms infinite`;
         preview4.style.animation = `glitch1 ${data.duration}ms infinite`;
         preview5.style.animation = `glitch5 ${data.duration}ms infinite`;
-        preview6.style.animation = `glitch1 ${data.duration}ms infinite`;
+        preview6.style.animation = `glitch4 ${data.duration}ms infinite`;
         preview7.style.animation = `glitch2 ${data.duration}ms infinite`;
       }else {
         alert("Дані відсутні у Firebase!");
@@ -42,5 +42,5 @@ async function loadFromFirebase() {
   }
 }
 
-// Додаємо обробники подій
+
 document.getElementById("loadButton").addEventListener("click", loadFromFirebase);

@@ -198,16 +198,30 @@ button, a
     {
         transform: translateX(-0.05em)
     }
+    25%
+    {
+        transform: translateX(0.15em)
+
+    }
+    50%
+    {
+        transform: translateX(0.4em)
+    }
     100%
     {
-        transform: translateX(0.05em)
+        transform: translateX(-0.05em)
     }
 }
 @keyframes glitch4 {
     0%
     {
-        transform: translateX(-0.14em)
+        transform: translateX(-0.25em)
     }
+    0%
+    {
+        transform: translateX(0.0em)
+    }
+    
     100%
     {
         transform: translateX(0.14em)
